@@ -23,6 +23,10 @@ public class Bedroom extends Room {
         return capacity;
     }
 
+    public ArrayList<Guest> getGuests() {
+        return guests;
+    }
+
     public RoomType getRoomType() {
         return roomType;
     }

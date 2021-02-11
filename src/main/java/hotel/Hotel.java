@@ -27,8 +27,11 @@ public class Hotel {
         this.bedrooms.add(bedroom);
     }
 
-//    public void checkIn(Guest checkGuest, Room checkRoom) {
-//        checkRoom.addGuest(checkGuest);
+    public void checkInBedroom(Guest checkGuest, Room checkRoom) {
+        checkRoom.addGuest(checkGuest);
+    }
+
+//    public void removeGuest(Guest guest, Bedroom bedroom) {
 //
 //    }
 }

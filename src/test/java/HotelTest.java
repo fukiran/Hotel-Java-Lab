@@ -23,7 +23,6 @@ public class HotelTest {
         ArrayList<Bedroom> bedrooms = new ArrayList<>();
         ArrayList<ConferenceRoom> conferenceRooms = new ArrayList<>();
         bedroom = new Bedroom(2, 21, RoomType.DOUBLE, guests);
-
         hotel = new Hotel(bedrooms, conferenceRooms);
     }
 
@@ -33,9 +32,15 @@ public class HotelTest {
         assertEquals(1, hotel.getBedrooms());
     }
 
+    @Test
+    public void hasRoomGuest() {
+        hotel.checkInBedroom(guest, bedroom);
+        assertEquals(1, bedroom.getGuests().size());
+    }
 //    @Test
-//    public void hasRoomGuest() {
-//        hotel.checkIn(guest, bedroom);
-//        assertEquals(1, bedroom.s);
+//    public void canRemoveGuest(){
+//        hotel.checkInBedroom(guest, bedroom);
+//        hotel.removeGuest(guest, bedroom);
+//        assertEquals(0, bedroom.getGuests().size());
 //    }
 }

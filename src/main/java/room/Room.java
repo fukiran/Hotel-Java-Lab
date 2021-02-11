@@ -19,13 +19,6 @@ public abstract class Room {
     public void addGuest(Guest guest){
         guests.add(guest);
     }
-//    public RoomType getRoomType() {
-//        return this.roomType;
-//    }
-//
-//    public int getValueFromEnum() {
-//        return this.roomType.getValue();
-//    }
 
 
 }
