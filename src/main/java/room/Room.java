@@ -16,7 +16,9 @@ public abstract class Room {
         this.guests = new ArrayList<Guest>();
     }
 
-
+    public void addGuest(Guest guest){
+        guests.add(guest);
+    }
 //    public RoomType getRoomType() {
 //        return this.roomType;
 //    }
