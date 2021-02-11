@@ -7,14 +7,13 @@ import guest.Guest;
 import java.util.ArrayList;
 
 public abstract class Room {
-//    private RoomType roomType;
-    private int capacity;
-    private ArrayList<Guest> guest;
 
-    public Room(int capacity){
-//        this.roomType = roomType;
+    protected int capacity;
+    protected ArrayList<Guest> guests;
+
+    public Room(int capacity, ArrayList<Guest> guests){
         this.capacity = capacity;
-        this.guest = new ArrayList<Guest>();
+        this.guests = new ArrayList<Guest>();
     }
 
 
