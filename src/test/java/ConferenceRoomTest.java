@@ -2,6 +2,7 @@ import guest.Guest;
 import org.junit.Before;
 import org.junit.Test;
 import room.ConferenceRoom;
+import room.RoomType;
 
 import java.util.ArrayList;
 
@@ -15,7 +16,7 @@ public class ConferenceRoomTest {
     public void before(){
         Guest guest = new Guest("Bob");
         ArrayList<Guest> guests = new ArrayList<Guest>();
-        conferenceRoom = new ConferenceRoom(50, "Main", guests);
+        conferenceRoom = new ConferenceRoom(50, "Main", RoomType.DOUBLE, guests);
     }
     @Test
     public void hasCapacity(){

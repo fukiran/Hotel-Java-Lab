@@ -1,7 +1,5 @@
 package room;
 
-
-
 import guest.Guest;
 
 import java.util.ArrayList;
@@ -20,5 +18,18 @@ public abstract class Room {
         guests.add(guest);
     }
 
+    public void removeGuest(Guest guest){
+        guests.remove(guest);
+    }
+    public int guestListSize(){
+        return this.guests.size();
+    }
+    public boolean isOccupied() {
+        return this.guestListSize() > 0;
+    }
+
+    public boolean isVacant() {
+        return this.guestListSize() == 0;
+    }
 
 }
