@@ -7,8 +7,8 @@ import java.util.ArrayList;
 public class ConferenceRoom extends Room {
     private String name;
 
-    public ConferenceRoom(int capacity, String name, RoomType Double, ArrayList<Guest> guests) {
-        super(capacity, guests);
+    public ConferenceRoom(int capacity, String name, RoomType Double) {
+        super(capacity);
         this.name = name;
     }
 

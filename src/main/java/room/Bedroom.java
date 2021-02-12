@@ -8,8 +8,8 @@ public class Bedroom extends Room {
     private final RoomType roomType;
     private int number;
 
-    public Bedroom(int capacity, int number, RoomType roomType, ArrayList<Guest> guests) {
-        super(capacity, guests);
+    public Bedroom(int capacity, int number, RoomType roomType) {
+        super(capacity);
         this.roomType = roomType;
         this.number = number;
     }
