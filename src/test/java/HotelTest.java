@@ -21,7 +21,7 @@ public class HotelTest {
         ArrayList<Guest> guests = new ArrayList<Guest>();
         ArrayList<Bedroom> bedrooms = new ArrayList<>();
         ArrayList<ConferenceRoom> conferenceRooms = new ArrayList<>();
-        bedroom = new Bedroom(2, 21, RoomType.DOUBLE);
+        bedroom = new Bedroom(2, 21, RoomType.DOUBLE, 75.50);
         conferenceRoom = new ConferenceRoom(2, "Main", RoomType.DOUBLE);
         hotel = new Hotel(bedrooms, conferenceRooms);
     }
